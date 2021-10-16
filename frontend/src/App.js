@@ -1,10 +1,12 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 import 'skeleton-css/css/skeleton.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function App() {
   return (
     <div className="App">
+      <i class="bi bi-backspace-reverse-fill"></i>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

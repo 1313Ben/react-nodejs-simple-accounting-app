@@ -1,9 +1,10 @@
 import React from 'react';
-import './NewEntry.scss';
+import './Entry.scss';
 
-const NewEntry = () => {
+const Entry = () => {
   return (
     <tr>
+      <td>TO DO</td>
       <td>TO DO</td>
       <td>TO DO</td>
       <td>TO DO</td>
@@ -16,4 +17,4 @@ const NewEntry = () => {
   )
 }
 
-export default NewEntry
+export default Entry

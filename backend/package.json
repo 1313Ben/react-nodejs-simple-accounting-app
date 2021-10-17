@@ -3,9 +3,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "server": "nodemon index.js",
+    "client": "yarn --cwd ../frontend start",
+    "dev": "concurrently --kill-others-on-fail \"yarn run server\" \"yarn run client\""
+  },
   "devDependencies": {
     "nodemon": "^2.0.13"
   },
+  "proxy": "http://localhost:4000/",
   "dependencies": {
     "body-parser": "^1.19.0",
     "concurrently": "^6.3.0",

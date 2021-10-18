@@ -3,18 +3,19 @@
   margin-left: 20px;
   margin-right: 20px;
   height: 100vh;
+ 
 }
 
 .box-title {
   height: 160px;
-
+  background-color: rgb(232, 238, 238);
   h4 {
     margin-bottom: 2px;
   }
 }
 
 .box-accounts {
-
+ 
   .accounts-boxes {
     display: flex;
     flex-wrap: wrap;
@@ -34,13 +35,14 @@
 
 .table-column {
   padding-left: 5px;
-  padding-right: 5px;
+  padding-right: 5px;  
 }
 
 .box-overview {
   text-align: center;
   padding-top: 10px;
   padding-left: 10PX;
+ 
 }
 
 .max-height {
@@ -80,4 +82,3 @@
   padding-top: 5%;
 }
 
-$bkg-color: rgb(235, 232, 232)

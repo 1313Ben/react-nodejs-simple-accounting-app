@@ -7,7 +7,8 @@ import LeftHeader from './components/layout/LeftHeader';
 import { BrowserRouter as Router } from 'react-router-dom';
 import TableContent from './components/table/tablecontent/TableContent';
 import TableSearchBar from './components/table/table-search-filter/TableSearchBar';
-
+import MainContent
+ from './components/maincontent/MainContent';
 function App() {
   return (
     <div class="container-main">
@@ -26,15 +27,13 @@ function App() {
             </div>
           </div>
         </div>
-        {/* Section Headers ends */}
-
-        <div class="row border mg-t">
+    
+        <MainContent>
           <div class="two-thirds column border-right max-height">
               <TableSearchBar/>            
               <TableContent/>
           </div>
-          {/* Section Table content ends */}
-          
+                  
           {/* Section Piechart overview starts */}
           {/* TO DO: Implement month and year selection, display pie charts, display amounts of expenses and incomes, total, etc.  --> */}
           <div class="one-third column mg-l max-height">
@@ -44,8 +43,8 @@ function App() {
               {/* TO DO: month selection, display pie charts, etc.. */ }
             </div>
           </div>
-          {/* Section Piechart overview ends */}
-        </div>
+        
+        </MainContent>
 
       </div>
     </div>

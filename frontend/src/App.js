@@ -19,7 +19,7 @@ function App() {
           <LeftHeader/>       
           <div class="one-half column mg-l pd-r bg-secondary">
             <div class="box-accounts pd-l pd-t">
-              <h4 >Konnten</h4>             
+              <h4 >Konten</h4>             
               <div class="accounts-boxes">
                 <Account title="Migros Bank" amount="1000.00" />
                 <Account title="Raiffeisen" amount="1000.00" />

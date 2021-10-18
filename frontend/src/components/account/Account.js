@@ -1,12 +1,12 @@
 import React from 'react';
 import './Account.scss';
 
-const Account = () => {
+const Account = ({title, amount}) => {
   return (
     <div class="account-box">
-      <p> <strong>Migros-bank</strong></p>
+      <p> <strong>{title }</strong></p>
       <p>Saldo</p>
-      <p>CHF <strong>1000.00</strong></p>
+      <p>CHF <strong>{amount}</strong></p>
     </div>
   )
 }

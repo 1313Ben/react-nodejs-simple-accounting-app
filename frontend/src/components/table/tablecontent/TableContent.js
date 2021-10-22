@@ -1,9 +1,10 @@
+import React from 'react';
 import "./TableContent.scss"
 import Entry from "../../entry/Entry"
 
 const TableContent = ()=>{
     return(
-        <div class="table-column border">
+        <div class="table-column">
         <table class="u-full-width">
           <thead>
             <tr>
@@ -24,4 +25,5 @@ const TableContent = ()=>{
         </div>
     )
 }
+
 export default TableContent;

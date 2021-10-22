@@ -6,51 +6,10 @@
  
 }
 
-.box-title {
-  height: 160px;
-  background-color: rgb(232, 238, 238);
-  h4 {
-    margin-bottom: 2px;
-  }
-}
-
-.box-accounts {
- 
-  .accounts-boxes {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-}
-
-.box-entry-menu-bar {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding-top: 10px;
-  padding-left: 10PX;
-  padding-right: 10PX;
-  // border-bottom: solid black 1px;
-}
-
-.table-column {
-  padding-left: 5px;
-  padding-right: 5px;  
-}
-
-.box-overview {
-  text-align: center;
-  padding-top: 10px;
-  padding-left: 10PX;
- 
-}
-
+// utilities
 .max-height {
   height: 80vh;
 }
-
-
-// utilities
 
 .border {
   border: solid 1px;

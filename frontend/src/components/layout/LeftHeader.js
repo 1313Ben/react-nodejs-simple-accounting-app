@@ -1,15 +1,12 @@
-import ExpenseDate from "../date/ExpenseDate";
-
+import CurrentDate from "../date/CurrentDate";
+import './LeftHeader.scss';
+	
 const LeftHeader = () => {
 	return (
-		<div class="one-half column border-right mg-l">
-			<div class="box-title pd-l pd-t">
-				<h2>Mein Kassenbuch</h2>
-				<div class="row">
-					<ExpenseDate date={new Date(2021, 8, 7)} />
-				</div>
+			<div class="box-title pd-l pd-r pd-t">
+				<h2>Kassenbuch</h2>
+					<CurrentDate date={new Date()} />
 			</div>
-		</div>
 	);
 };
 

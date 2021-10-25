@@ -11,10 +11,10 @@ const TableContent = ()=>{
               <th>Nr.</th>
               <th>Datum</th>
               <th>TYP</th>
-              <th>KOMMENTAR</th>
               <th>BETRAG</th>
               <th>KONTO</th>
               <th>KATEGORIE</th>
+              <th>KOMMENTAR</th>
             </tr>
           </thead>
           {/* TO DO: Implement display new entry, edit and delete --> */}

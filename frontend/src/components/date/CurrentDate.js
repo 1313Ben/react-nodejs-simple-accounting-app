@@ -1,14 +1,14 @@
 import React from 'react'
-import './ExpenseDate.scss';
+import './CurrentDate.scss';
 
-const ExpenseDate = (props)=>{
+const CurrentDate = (props)=>{
   const year= props.date.getFullYear();
   const day= props.date.toLocaleString('ge-DE', {day: '2-digit'});
   const month=props.date.toLocaleString('ge-DE', {month: 'long'});
   return(
-      <div class='expense-date'> 
+      <div class='current-date'> 
        <p class="display-2">         
-          <span><i class="bi bi-calendar2-fill"></i></span>
+          <span><i class="bi bi-calendar-event"></i></span>
           <span class="ms-4 px-2"> Heute</span>
           <span class='date_day'>{day}</span>
           <span class='date_month'>{month}</span>         
@@ -18,5 +18,4 @@ const ExpenseDate = (props)=>{
   );
 }
 
-
-export default ExpenseDate
+export default CurrentDate

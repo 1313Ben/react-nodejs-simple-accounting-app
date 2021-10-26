@@ -1,19 +1,20 @@
 .date_month{
     margin-left: 0.5rem;
 }
+
 .date_year{    
     margin-left: 0.5rem;
 }
+
 .date_day{    
     margin-left: 0.5rem;
 }
 
-.expense-date {
+.current-date {
     display: flex;
     flex-direction: row;     
     color: black;
     align-items: flex-start;
     justify-content: flex-start;
-   
-  }
+}
   

@@ -1,44 +1,34 @@
 import './App.scss';
 import 'skeleton-css/css/skeleton.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import Account from './components/account/Account';
 import LeftHeader from './components/layout/LeftHeader';
+import RightHeader from './components/layout/RightHeader';
+import MainContentLeft from './components/layout/MainContentLeft';
+import MainContentRight from './components/layout/MainContentRight';
 import { BrowserRouter as Router } from 'react-router-dom';
-import TableContent from './components/table/tablecontent/TableContent';
-import TableSearchBar from './components/table/table-search-filter/TableSearchBar';
-import MainContent
- from './components/maincontent/MainContent';
-import Overview from './components/overview/Overview';
+
 
 function App() {
   return (
     <div class="container-main">
       <div class="container-content">
-        {/* Section headers start */}
         <div class="row border">
-          <LeftHeader/>       
+          <div class="one-half column border-right mg-l">
+            <LeftHeader />
+           </div>  
           <div class="one-half column mg-l pd-r bg-secondary">
-            <div class="box-accounts pd-l pd-t">
-              <h4 >Konten</h4>             
-              <div class="accounts-boxes">
-                <Account title="Migros Bank" amount="1000.00" />
-                <Account title="Raiffeisen" amount="1000.00" />
-                <Account title="Neon" amount="500.00" />
-              </div>
-            </div>
+            <RightHeader />
           </div>
         </div>
-    
-        <MainContent>
-          <div class="two-thirds column border-right max-height">
-              <TableSearchBar/>            
-              <TableContent/>
-          </div>                  
-          {/* Section Piechart overview starts */}
-         <Overview/>    
-        
-        </MainContent>
 
+        <div class="row border mg-t">
+          <div class="two-thirds column border-right max-height">
+            <MainContentLeft />
+          </div>
+          <div class="one-third column mg-l max-height">
+            <MainContentRight />
+          </div>        
+        </div>
       </div>
     </div>
   );

@@ -84,3 +84,4 @@ const updateEntry = async (req, res, next)=>{
 
 
 
+module.exports = { getEntry, getAllEntries, updateEntry, deleteEntry, addEntry}

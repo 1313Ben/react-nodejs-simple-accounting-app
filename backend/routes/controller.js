@@ -5,10 +5,13 @@ const Account = require('../model/Account');
 const firestore= require('firebase/firestore');
 const entriesRef= db.accdb.collection('entries');
 const accountsRef = db.accdb.collection('accounts');
+let counter = 1020;
 
 const addEntry = async (req, res, next)=>{
-    try{
-        const entry = await entriesRef.doc().set(req.body);
+    try{   
+        counter = counter +1;  
+        const added = req.body;
+        const entry = await entriesRef.doc(counter.toString()).set({...added, id: counter}, { merge: true });
         console.log(entry);
         res.send('Entry saved successfully');
     }catch(error){
@@ -26,7 +29,7 @@ const getAllEntries = async (req, res, next)=>{
            res.status(404).send('Data not found');
            console.log("Data not found");
         }else{          
-          data.forEach( (doc)=>{
+          data.forEach( (doc)=>{              
               let entry = doc.data();
               entryList.push(
                   new Entry(entry.id, entry.date, entry.type, entry.amount, entry.accountName,
@@ -62,8 +65,8 @@ const getEntry = async (req, res, next)=>{
 
 const deleteEntry = async (req, res, next)=>{
     try{
-        const id = req.params.id;
-        const entry = await entriesRef.doc(id).delete();        
+        const entry_id = req.params.id;
+        const entry = await entriesRef.doc(entry_id).delete();              
         res.send('Entry record deleted successfully');
     }catch(error){
         res.status(400).send(error.message);

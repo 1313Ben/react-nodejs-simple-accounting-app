@@ -2,13 +2,18 @@
   margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
-  height: 100vh;
- 
+  height: 100vh;  
+ width: 100%;
 }
-
+.maincontent{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
 // utilities
 .max-height {
-  height: 80vh;
+  height: 100vh;
 }
 
 .border {
@@ -18,8 +23,7 @@
 }
 
 .border-right {
-  border-right: solid 1px grey;
-  
+  border-right: solid 1px grey;  
 }
 
 .mg-l {

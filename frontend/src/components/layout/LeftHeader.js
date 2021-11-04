@@ -3,7 +3,7 @@ import './LeftHeader.scss';
 	
 const LeftHeader = () => {
 	return (
-			<div class="box-title pd-l pd-r pd-t">
+			<div className="box-title pd-l pd-r pd-t">
 				<h2>Kassenbuch</h2>
 					<CurrentDate date={new Date()} />
 			</div>

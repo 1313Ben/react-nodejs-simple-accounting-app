@@ -6,8 +6,8 @@ const TableContent = (props)=>{
     const {entries}=props;
 
     return(
-        <div class="table-column">
-        <table class="u-full-width">
+        <div className="table-column">
+        <table className="u-full-width">
           <thead>
             <tr>
               <th>Nr.</th>
@@ -21,7 +21,7 @@ const TableContent = (props)=>{
           </thead>        
           <tbody>
             { entries && entries.length > 0 ?( 
-              entries.map(item=>{ return <Entry entry={item} key={item.id}/>} )
+              entries.map(item=>{ return <Entry key={item.id} entry={item} />} )
               ) : (
               <tr><td>''</td><td>{`no data`}</td>
               <td>{`no data`}</td>

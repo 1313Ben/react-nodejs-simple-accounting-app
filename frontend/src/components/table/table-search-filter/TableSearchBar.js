@@ -3,15 +3,15 @@ import './TableSearchBar.scss';
 
 const TableSearchBar = () => {
   return (
-    <div class="table-menu-bar">
+    <div className="table-menu-bar">
       <h5>Ausgaben / Einkommen </h5>
-      <button class="button-primary">
+      <button className="button-primary">
         {" "}
-        <i class="bi bi-plus-square"></i> Neuer Eintrag
+        <i className="bi bi-plus-square"></i> Neuer Eintrag
       </button>
-      <button class="button-primary">
+      <button className="button-primary">
         {" "}
-        <i class="bi bi-funnel"></i> Filter
+        <i className="bi bi-funnel"></i> Filter
       </button>
       <input type="text" name="name" placeholder="suchen" id="searchInput" />
   </div>

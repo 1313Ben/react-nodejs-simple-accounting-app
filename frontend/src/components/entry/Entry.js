@@ -16,12 +16,12 @@ const Entry = (props) => {
 			<td>{entry.category}</td>
 			<td>{entry.comment}</td>
 			<td className="btn">
-				<button class="edit-delete">
+				<button className="edit-delete">
 					<i className="bi bi-pencil-square"></i>
 				</button>
 			</td>
 			<td className="btn">
-				<button class="edit-delete">
+				<button className="edit-delete">
 					<i className="bi bi-trash"></i>
 				</button>
 			</td>

@@ -22,7 +22,7 @@ function App() {
         </div>
 
         <div className="maincontent row border mg-t">
-          <div className="two-thirds column border-right">
+          <div className="two-thirds column">
             <MainContentLeft />
           </div>
           <div className="one-third column mg-l">

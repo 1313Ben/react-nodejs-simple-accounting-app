@@ -9,7 +9,7 @@ const Entry = (props) => {
       <td>{entry.id}</td>
       <td>{entry.date}</td>
       <td>{entry.type}</td>
-      <td>`${entry.currency} ${entry.amount}`</td>
+      <td>{entry.currency} {entry.amount}</td>
       <td>{entry.accountName} </td>
       <td>{entry.category}</td>
       <td>{entry.comment}</td>

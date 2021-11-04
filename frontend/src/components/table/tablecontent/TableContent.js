@@ -2,10 +2,12 @@ import React from 'react';
 import "./TableContent.scss"
 import Entry from "../../entry/Entry"
 
-const TableContent = ()=>{
+const TableContent = (props)=>{
+    const {entries}=props;
+
     return(
-        <div class="table-column">
-        <table class="u-full-width">
+        <div className="table-column">
+        <table className="u-full-width">
           <thead>
             <tr>
               <th>Nr.</th>
@@ -16,10 +18,19 @@ const TableContent = ()=>{
               <th>KATEGORIE</th>
               <th>KOMMENTAR</th>
             </tr>
-          </thead>
-          {/* TO DO: Implement display new entry, edit and delete --> */}
+          </thead>        
           <tbody>
-            <Entry />
+            { entries && entries.length > 0 ?( 
+              entries.map(item=>{ return <Entry key={item.id} entry={item} />} )
+              ) : (
+              <tr><td>''</td><td>{`no data`}</td>
+              <td>{`no data`}</td>
+              <td>{`no data`}</td>
+              <td>{`no data`}</td>
+              <td>{`no data`}</td>
+              <td>{`no data`}</td></tr>
+              ) }
+            
           </tbody>
         </table>
         </div>

@@ -3,7 +3,7 @@ import './Piechart.scss';
 
 const Piechart = () => {
   return (
-    <div class="piechart">
+    <div className="piechart">
       <h2>Piechart</h2>
     </div>
   )

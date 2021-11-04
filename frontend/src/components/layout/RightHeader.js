@@ -3,9 +3,9 @@ import './RightHeader.scss';
 
 const RightHeader = () => {
   return (
-  <div class="pd-l pd-t">
+  <div className="pd-l pd-t">
     <h4 >Konten</h4>             
-    <div class="accounts-boxes">
+    <div className="accounts-boxes">
       <Account title="Migros Bank" amount="1000.00" />
       <Account title="Raiffeisen" amount="1000.00" />
       <Account title="Neon" amount="500.00" />

@@ -3,7 +3,7 @@ import './Account.scss';
 
 const Account = ({title, amount}) => {
   return (
-    <div class="account-box">
+    <div className="account-box">
       <p> <strong>{title }</strong></p>
       <p>Saldo</p>
       <p>CHF <strong>{amount}</strong></p>

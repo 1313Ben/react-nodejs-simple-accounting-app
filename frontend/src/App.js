@@ -10,22 +10,22 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 function App() {
   return (
-    <div class="container-main">
-      <div class="container-content">
-        <div class="row border">
-          <div class="one-half column border-right mg-l">
+    <div className="container-main">
+      <div className="container-content">
+        <div className="row border">
+          <div className="one-half column border-right mg-l">
             <LeftHeader />
            </div>  
-          <div class="one-half column mg-l pd-r bg-secondary">
+          <div className="one-half column mg-l pd-r bg-secondary">
             <RightHeader />
           </div>
         </div>
 
-        <div class="row border mg-t">
-          <div class="two-thirds column border-right max-height">
+        <div className="maincontent row border mg-t">
+          <div className="two-thirds column">
             <MainContentLeft />
           </div>
-          <div class="one-third column mg-l max-height">
+          <div className="one-third column mg-l">
             <MainContentRight />
           </div>        
         </div>

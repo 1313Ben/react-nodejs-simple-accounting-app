@@ -215,4 +215,4 @@ $RECYCLE.BIN/
 # custom
 commands.txt
 serviceAccountKey.json
-.assets/
+assets

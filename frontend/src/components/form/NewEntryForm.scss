@@ -1,0 +1,45 @@
+.form-main{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0, 0.3);
+  backdrop-filter: blur(2px);
+  
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+}
+
+.form-inner {
+  position: relative;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 80px;
+  background-color: grey;
+  border-radius: 5px;
+
+  .close-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 50px;
+
+    &:hover {
+      opacity: .6;
+    }
+  }
+}
+
+.error-message {
+  color: orange;
+}
+
+.margin-b {
+  margin-bottom: 30px;
+}
+
+.date-field {
+  height: 38px;
+}
